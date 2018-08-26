@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta property="og:title" content="@JAM EXPO 2018 ">
+    <meta property="og:description" content="神奈川県横浜市 港北区の横浜アリーナで行われる@JAM EXPO 2018。
+
+2014年より毎年行われ、今年で4年目のアイドルフェス。会場内に大小様々なステージが用意され、2日間で総勢120組を超えるグループが集結。握手や特典会を行う、ふれあいエリアの設置有。明日のアイドルを夢見る小学生以下4～12歳(小学生、要保護者同伴)は無料。">    <meta property="og:image" content="https://d9u1anxlken1z.cloudfront.net/image/show/OnDqLoplK3C42Br1lN63rsYjDSl0VNbP2XRNlZP9yKNBzNJ13dQYPu6JuQuixPBg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="@JAM EXPO 2018 ">
+    <meta name="twitter:description" content="神奈川県横浜市 港北区の横浜アリーナで行われる@JAM EXPO 2018。
+
+2014年より毎年行われ、今年で4年目のアイドルフェス。会場内に大小様々なステージが用意され、2日間で総勢120組を超えるグループが集結。握手や特典会を行う、ふれあいエリアの設置有。明日のアイドルを夢見る小学生以下4～12歳(小学生、要保護者同伴)は無料。">    <meta name="twitter:image" content="https://d9u1anxlken1z.cloudfront.net/image/show/OnDqLoplK3C42Br1lN63rsYjDSl0VNbP2XRNlZP9yKNBzNJ13dQYPu6JuQuixPBg">
+
+    <meta property="al:ios:app_store_id" content="1402461698">
+    <meta property="al:ios:url" content="fes-sharing://sharing/f/50">
+    <meta property="al:ios:app_name" content="FesPlus: 全国フェスのタイムテーブルとプレイリスト">
+
+    <meta property="al:android:package" content="jp.eplus.fes">
+    <meta property="al:android:url" content="fes-sharing://sharing/f/50">
+    <meta property="al:android:app_name" content="FesPlus: 全国フェスのタイムテーブルとプレイリスト">
+
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function() {
+        var desktopFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+            mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+            app = "fes-sharing://sharing/f/50";
+        if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            window.location = app;
+            window.setTimeout(function() {
+                window.location = mobileFallback;
+            }, 25);
+        } else {
+            window.location = desktopFallback;
+        }
+        function killPopup() {
+            window.removeEventListener('pagehide', killPopup);
+        }
+        window.addEventListener('pagehide', killPopup);
+    };
+</script>
+</body>
