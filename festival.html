@@ -23,22 +23,22 @@
 <body>
     <a href="fes-sharing://sharing/f/50">Open in APP</a>
 <script type="text/javascript">
-    window.onload = function() {
-        var desktopFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
-            mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
-            app = "fes-sharing://sharing/f/50";
-        if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            window.location = app;
+//     window.onload = function() {
+//         var desktopFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+//             mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+//             app = "fes-sharing://sharing/f/50";
+//         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+//             window.location = app;
 //             window.setTimeout(function() {
 //                 window.location = mobileFallback;
 //             }, 25);
-        } else {
-            window.location = desktopFallback;
-        }
-        function killPopup() {
-            window.removeEventListener('pagehide', killPopup);
-        }
-        window.addEventListener('pagehide', killPopup);
-    };
+//         } else {
+//             window.location = desktopFallback;
+//         }
+//         function killPopup() {
+//             window.removeEventListener('pagehide', killPopup);
+//         }
+//         window.addEventListener('pagehide', killPopup);
+//     };
 </script>
 </body>
