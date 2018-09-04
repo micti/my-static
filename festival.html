@@ -29,9 +29,9 @@
             app = "fes-sharing://sharing/f/50";
         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
             window.location = app;
-//             window.setTimeout(function() {
-//                 window.location = mobileFallback;
-//             }, 100);
+            window.setTimeout(function() {
+                window.location = mobileFallback;
+            }, 1000);
         } else {
             window.location = desktopFallback;
         }
