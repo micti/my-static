@@ -28,10 +28,10 @@
             mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
             app = "fes-sharing://sharing/f/50";
         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            window.location = app;
+            window.location.href = app;
             window.setTimeout(function() {
-                window.location = mobileFallback;
-            }, 1000);
+                window.location.href = mobileFallback;
+            }, 5000);
         } else {
             window.location = desktopFallback;
         }
