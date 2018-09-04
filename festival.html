@@ -28,9 +28,13 @@
             mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
             app = "fes-sharing://sharing/f/50";
         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-            if(!window.open(app)){
-        window.location = mobileFallback;
-}
+            var start = new Date().getTime();
+            window.location = app;
+            var end = new Date().getTime();
+            if (end - start < 1) {
+                document.location = mobileFallback;
+            }
+
 //             window.location.href = app;
 //             window.setTimeout(function() {
 //                 window.location.href = mobileFallback;
