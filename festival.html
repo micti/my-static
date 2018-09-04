@@ -13,32 +13,32 @@
 
     <meta property="al:ios:app_store_id" content="1402461698">
     <meta property="al:ios:url" content="fes-sharing://sharing/f/50">
-    <meta property="al:ios:app_name" content="FesPlus: 全国フェスのタイムテーブルとプレイリスト">
+    <meta property="al:ios:app_name" content="Fes">
 
     <meta property="al:android:package" content="jp.eplus.fes">
     <meta property="al:android:url" content="fes-sharing://sharing/f/50">
-    <meta property="al:android:app_name" content="FesPlus: 全国フェスのタイムテーブルとプレイリスト">
+    <meta property="al:android:app_name" content="Fes">
 
 </head>
 <body>
-    <a href="fes-sharing://sharing/f/50">Open in APP</a>
+<!--     <a href="fes-sharing://sharing/f/50">Open in APP</a> -->
 <script type="text/javascript">
-//     window.onload = function() {
-//         var desktopFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
-//             mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
-//             app = "fes-sharing://sharing/f/50";
-//         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-//             window.location = app;
-//             window.setTimeout(function() {
-//                 window.location = mobileFallback;
-//             }, 25);
-//         } else {
-//             window.location = desktopFallback;
-//         }
-//         function killPopup() {
-//             window.removeEventListener('pagehide', killPopup);
-//         }
-//         window.addEventListener('pagehide', killPopup);
-//     };
+    window.onload = function() {
+        var desktopFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+            mobileFallback = "https://eplus.jp/sys/web/fesplus-app/index.html",
+            app = "fes-sharing://sharing/f/50";
+        if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            window.location = app;
+            window.setTimeout(function() {
+                window.location = mobileFallback;
+            }, 25);
+        } else {
+            window.location = desktopFallback;
+        }
+        function killPopup() {
+            window.removeEventListener('pagehide', killPopup);
+        }
+        window.addEventListener('pagehide', killPopup);
+    };
 </script>
 </body>
